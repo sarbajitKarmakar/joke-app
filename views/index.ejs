@@ -9,7 +9,9 @@
 <body>
     <div class="container">
         <div class="head"><h1>Random Jokes</h1></div>
-        <div class="jokes"></div>
+        <% if(locals.result){ %>
+        <div class="jokes"> <%= result.joke %></div>
+        <% } %>
         <form action="" method="post">
             <input type="submit" formaction="/">
         </form>

@@ -25,6 +25,9 @@ body{
 .jokes{
     height: 75%;
     width: 100%;
+    display: flex;
+    padding: 20px 11px;
+    box-sizing: border-box;
 }
 
 form{

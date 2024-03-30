@@ -9,10 +9,16 @@ app.use(express.static("public"));
 
 app.get('/', async (req , res)=>{
     try {
-        const result = await axios.get(API_URL);
+        const response = await axios.get(API_URL,{
+            params:{
+                type: "single",
+            },
+        });
+        const result = response.data;
+        // console.log(result.data);
         res.render("index.ejs",{
-            result: JSON.stringify(result.data),
-        })
+            result: result,
+        });
     } catch (error) {
        res.send(error.message); 
     }
