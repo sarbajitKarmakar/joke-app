@@ -1,0 +1,41 @@
+body{
+    background-image: linear-gradient(45deg ,red,purple);
+    /* background-color: yellow; */
+}
+
+.container{
+    width: 25vw;
+    height: 30vw;
+    border: 2px solid white;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.jokes{
+    height: 75%;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    border-top: 2px solid black;
+}
+
+input{
+    border: none;
+    width: 100%;
+    font-size: 30px;
+    background-color: white;
+}
