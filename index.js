@@ -25,7 +25,7 @@ app.get('/', async (req , res)=>{
 })
 
 app.post("/" ,(req , res)=>{
-    res.send("Success");
+    res.redirect('/');
 })
 
 app.listen(port , () =>{
